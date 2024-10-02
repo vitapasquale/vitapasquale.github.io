@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Helena Dakak</title>
+
+    <meta name="viewport" content="width=device=width, initial scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+        <header>
+		<a href="index.html"> <img class="logo" src="galeria/helenadakak.png"></a>
+
+        <a href="#" id="icono">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
+        <nav id="navegador">
+        <a href="index.html#Productos"> Productos </a>
+        <a href="index.html#Contacto"> Contacto </a>
+        <a href="aboutus.html">About us </a>
+        <a href="formulario.html">Preguntas</a>
+        </nav>
+        </header>
+           
+        <section>
+            <div class="titulo">
+            <h1>Accesorios</h1>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <div class="contenedor">
+		
+            <div class="caja3columnas">
+                <img class="slide" src="galeria/cartera1.jpeg">
+                <img class="slide" src="galeria/cartera01.jpeg">
+                <img class="slide" src="galeria/cartera001.jpeg">
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+                <h1> Cartera </h1>
+                <p> Cartera Mini Bag rayada.</p>  
+                <a href="#" class="boton">Comprar</a>
+            </div>
+                    
+            <div class="caja3columnas">
+                <img class="slide1" src="galeria/tote1.jpeg">
+                <img class="slide1" src="galeria/tote01.jpeg">
+                <a class="prev" onclick="prevSlide1()">&#10094;</a>
+                <a class="next" onclick="nextSlide1()">&#10095;</a>
+                <h1> Cartera</h1>
+                <p> Tote bag azul y naranja.</p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+            
+                
+            <div class="caja3columnas">
+                <img class="slide2" src="galeria/cartera2.jpeg">
+                <img class="slide2" src="galeria/cartera02.jpeg">
+                <img class="slide2" src="galeria/cartera002.jpeg">
+                <a class="prev" onclick="prevSlide2()">&#10094;</a>
+                <a class="next" onclick="nextSlide2()">&#10095;</a>
+                <h1> Bandolera </h1>
+                <p> Bandolera azul metalizada. </p>
+                <a href="#" class="boton">Comprar</a>
+            </div>
+        
+             
+             <div  class="caja3columnas">
+                 <img class="slide3" src="galeria/aros1.jpeg">
+                 <img class="slide3" src="galeria/aros01.jpeg">
+                <a class="prev" onclick="prevSlide3()">&#10094;</a>
+                <a class="next" onclick="nextSlide3()">&#10095;</a>
+                <h1> Aros</h1>
+                <p> Aros Frog celestes. </p>
+                <a href="#" class="boton">Comprar</a>
+            </div> 
+    
+        <footer>
+            <div class="contenedor2">
+                <h2> CONTACTÁNOS </h2>
+            <div id="Contacto">
+             <p> <a href= "https://www.instagram.com/candelaria.portfolio?igsh=MW03OGZiMTZmZThvZA%3D%3D&utm_source=qr" target="_blank"> <i class="fa fa-instagram" aria-hidden="true">  </i> @helenadakak </a></p>
+                
+              <p> <a href="mailto:crodri@palermo.com?Subject=Consulta%20Saudade%20BA" target="_blank"> <i class="fa fa-envelope-o" aria-hidden="true"> </i> helenadakak@gmail.com </a></p>
+                
+              <p> <a href="https://wa.me/541162962331" target="_blank"> <i class="fa fa-whatsapp" aria-hidden="true"> </i> +5491154000092 </a></p>
+            
+              <p> <a href="https://www.google.com/maps/place/La+Rabida+2400,+B1643AXT+B%C3%A9ccar,+Provincia+de+Buenos+Aires/@-34.4703562,-58.5593036,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcbaaaf9a618d5:0xd15c9dd66a39557d!8m2!3d-34.4703606!4d-58.5567287!16s%2Fg%2F11j8pzry5c?hl=es&entry=ttu" target="_blank"> <i class="fa fa-map-marker" aria-hidden="true"></i> Av. Córdoba 5515|CABA </a></p>
+                </div>
+        
+                </div>
+            </footer>
+            <script>
+                document.getElementById('icono').addEventListener('click', function() {
+                    document.getElementById('navegador').classList.toggle('mostrarmenu');
+                });
+            </script>
+                
+            <script>
+            let currentSlide = 0;
+             
+            function showSlide(index) {
+              const slides = document.querySelectorAll('.slide');
+              const totalSlides = slides.length;
+             
+              if (index >= totalSlides) {
+                currentSlide = 0;
+              } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+              } else {
+                currentSlide = index;
+              }
+             
+              slides.forEach((slide, i) => {
+                slide.style.display = i === currentSlide ? 'block' : 'none';
+              });
+            }
+             
+            function nextSlide() {
+              showSlide(currentSlide + 1);
+            }
+             
+            function prevSlide() {
+              showSlide(currentSlide - 1);
+            }
+             
+            // Cambia automáticamente de diapositiva cada 3 segundos (ajusta según tus necesidades)
+            //setInterval(nextSlide,  3000);
+             
+            // Muestra la primera diapositiva al cargar la página
+            showSlide(currentSlide);  
+            </script>
+            
+            <script>
+            let currentSlide1 = 0;
+             
+            function showSlide1(index) {
+              const slides1 = document.querySelectorAll('.slide1');
+              const totalSlides1 = slides1.length;
+             
+              if (index >= totalSlides1) {
+                currentSlide1 = 0;
+              } else if (index < 0) {
+                currentSlide1 = totalSlides1 - 1;
+              } else {
+                currentSlide1 = index;
+              }
+             
+              slides1.forEach((slide1, i) => {
+                slide1.style.display = i === currentSlide1 ? 'block' : 'none';
+              });
+            }
+             
+            function nextSlide1() {
+              showSlide1(currentSlide1 + 1);
+            }
+             
+            function prevSlide1() {
+              showSlide1(currentSlide1 - 1);
+            }
+             
+            // Cambia automáticamente de diapositiva cada 3 segundos (ajusta según tus necesidades)
+            //setInterval(nextSlide1,  3000);
+             
+            // Muestra la primera diapositiva al cargar la página
+            showSlide1(currentSlide1);  
+            </script>
+                
+                <script>
+            let currentSlide2 = 0;
+             
+            function showSlide2(index) {
+              const slides2 = document.querySelectorAll('.slide2');
+              const totalSlides2 = slides2.length;
+             
+              if (index >= totalSlides2) {
+                currentSlide2 = 0;
+              } else if (index < 0) {
+                currentSlide2 = totalSlides2 - 1;
+              } else {
+                currentSlide2 = index;
+              }
+             
+              slides2.forEach((slide2, i) => {
+                slide2.style.display = i === currentSlide2 ? 'block' : 'none';
+              });
+            }
+             
+            function nextSlide2() {
+              showSlide2(currentSlide2 + 1);
+            }
+             
+            function prevSlide2() {
+              showSlide2(currentSlide2 - 1);
+            }
+             
+            // Cambia automáticamente de diapositiva cada 3 segundos (ajusta según tus necesidades)
+            //setInterval(nextSlide2,  3000);
+             
+            // Muestra la primera diapositiva al cargar la página
+            showSlide2(currentSlide2);  
+            </script>
+                
+                <script>
+            let currentSlide3 = 0;
+             
+            function showSlide3(index) {
+              const slides3 = document.querySelectorAll('.slide3');
+              const totalSlides3 = slides3.length;
+             
+              if (index >= totalSlides3) {
+                currentSlide3 = 0;
+              } else if (index < 0) {
+                currentSlide3 = totalSlides3 - 1;
+              } else {
+                currentSlide3 = index;
+              }
+             
+              slides3.forEach((slide3, i) => {
+                slide3.style.display = i === currentSlide3 ? 'block' : 'none';
+              });
+            }
+             
+            function nextSlide3() {
+              showSlide3(currentSlide3 + 1);
+            }
+             
+            function prevSlide3() {
+              showSlide3(currentSlide3 - 1);
+            }
+             
+            // Cambia automáticamente de diapositiva cada 3 segundos (ajusta según tus necesidades)
+            //setInterval(nextSlide3,  3000);
+             
+            // Muestra la primera diapositiva al cargar la página
+            showSlide3(currentSlide3);  
+            </script>
+                
+                </body>
+            </html>
