@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.logo {width: 250px;margin-top: 30px;margin-bottom: 50px;}
+header {text-align: center; margin: 20px;}
+.banner img { text-align: center; margin-top: 40px; display: block; margin-left: auto ; margin-bottom: 50px;width: 100%;}
+.banner video{text-align: center;margin-top: 40px;display: block;margin-left: auto;margin-bottom: 50px;width: 100%;}
+html {scroll-behavior: smooth}
+
+body {background-color: #ffffff; font-family:"Lato"}
+
+nav{display: none;}
+nav a {color: #000000; font-size: 20px; margin: 60px; text-align: center; text-decoration: none;}
+nav ul li {display: inline-block}
+
+nav a:hover {color: #e7e7e7; transition: all 1s}
+
+.contenedor, .contenedor2 {display: flex; flex-flow: wrap;text-align: center;}
+.contenedor2 h2 {width: 100%; text-align: center}
+#Contacto{width: 100%;text-align: center;}
+
+
+.caja3columnas {color: #000000; font-family: "Lato"; font-size: 11px; text-align: center; margin-bottom: 100px; padding: 10px; text-decoration: none; width: 33%; box-sizing: border-box; position: relative}
+
+.caja3columnas a {text-decoration: none; color: #000000;  display: block}
+
+.camisainicio {width: 100%}
+.pollerasinicio {width: 100%}
+.collarinicio {width: 100%}
+
+footer {background-color: #ebebeb; text-align: center; width: 100%;}
+footer a {color: #000000; text-decoration: none; font-size: 15px;text-align: center;width: 100px;}
+
+img{max-width: 100%;}
+
+.titulo{text-align: center;margin-top: 35px;margin-bottom: 5px;}
+.titulo img{width: 8%;}
+.titulo2 {text-align: center;margin-top: 35px;margin-bottom: 5px;}
+.titulo2 img{width: 14%;}
+.titulo3 {text-align: center;margin-top: 35px;margin-bottom: 5px;}
+.tutulo3 img {width: 18%;}
+.titulo4 {text-align: center;margin-top: 35px;margin-bottom: 5px;}
+.titulo4 img {width: 17%;}
+
+.prev {color: #ffffff !important ;position: absolute; top: 40%;font-size:30px;left:15px}
+.next {color: #ffffff !important ;position: absolute; top: 40%;font-size:30px;right: 35px}
+.mostrarmenu{display:block;}
+#icono{position: absolute;right: 10px;}
+
+.caja3columnas .boton{color: #ffffff;background-color: #000000;text-align: center;text-decoration: none;padding: 6px;border-radius: 15px;}
+.contenedor3 {max-width: 1000px;}
+h2 {width: 100%; text-align: center;}
+h3 {width: 100%; text-align: left;}
+.cajaanuncio {width: 728px; height: 90px; display: block; margin: auto; text-align: center;}  
+form {margin: auto; width: 30%}
+.nombre {text-align: center; color:#000000; margin-bottom: 10px}
+.boton2 {background-color:#000000; color: white; margin: 10px; margin-left: 150px; text-decoration: none; padding: 6px; border-radius: 15px}
+.boton2:hover {background-color: white; color:#000000; transition: all 1s}
+.contenedor3 {max-width: 1000px}
+section {width: 100%;}
+
+@media (max-width: 480px){
+	#icono {display: block; position: absolute; right: 10px; top: 65px}
+	header {display: block}
+	nav {display: none} 
+	.mostrarmenu {display: block; }
+	.caja3columnas {width: 100%}
+	.caja2columnas {width: 100%}
+	.topsinicio {width: 98%}
+	.pollersinicio {width: 98%}
+	.pantalonesinicio {width: 98%}
+	nav a {display: block}
+  .navegador{display: none;}
+  .navegador.mostrarmenu{display: flex;}
+  .cajaanuncio {width: 300px; height: 600px}
+  form {width: 70 px;}
+}
+
+  /* Mostrar la barra de navegación y ocultar el ícono en pantallas grandes */
+@media (min-width: 1024px) {
+  nav {
+      display: block;text-align: center;}
+  #icono{display: none;}
+  
+}
