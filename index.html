@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+            
+<title>Helena Dakak</title>
+
+    <meta name="viewport" content="width=device=width, initial scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+        <header>
+		<img class="logo" src="galeria/helenadakak.png">
+
+        <a href="#" id="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
+        <nav id="navegador" class=" ">
+        <a href="#Productos"> Productos </a>
+        <a href="#Contacto"> Contacto </a>
+        <a href="aboutus.html">About us </a>
+        <a href="formulario.html">Preguntas</a>
+        </nav>
+        </header>
+
+        <section>
+            <div class="banner">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="galeria/imprincipal.jpeg"> 
+                <img class="banner" src="galeria/prinicpal.jpeg">
+                </picture>
+                </div>
+        </section>
+    
+                <div class="contenedor" id="Productos">
+                    <h2>Productos</h2>
+                    <div class="caja3columnas">
+                        <a href="top.html"><h2>Top</h2>
+                        <img class="camisainicio" src="galeria/camisa.jpeg"> </a>
+                    </div>
+                    <div class="caja3columnas">
+                        <a href="bottom.html"><h2>Bottom</h2>
+                        <img class="pollerasinicio" src="galeria/pollera1.jpeg"> </a>
+                    </div>
+                    <div class="caja3columnas">
+                        <a href="accesorios.html"><h2>Accesorios</h2>
+                        <img class= "collarinicio" src="galeria/cartera01.jpeg"></a>
+                </div> 
+
+                <section>
+                    <iframe class="cajaanuncio" src="https://simongallardo.github.io/anuncio.html"
+                            scrolling="no" frameborder="0"></iframe>
+                    </section>
+               
+                </main>
+            <footer>
+                <div class="contenedor2">
+                    <h2> CONTACTÁNOS </h2>
+                <div id="Contacto">
+                 <p> <a href= "https://www.instagram.com/vitaportfolio_/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true">  </i> @helenadakak </a></p>
+                    
+                  <p> <a href="mailto:vpasqu@palermo.edu?Subject=Consulta%20helenadakak%20BA" target="_blank"> <i class="fa fa-envelope-o" aria-hidden="true"> </i> helenadakak@gmail.com </a></p>
+                    
+                  <p> <a href="https://wa.me/3875005084" target="_blank"> <i class="fa fa-whatsapp" aria-hidden="true"> </i> +5491154000092 </a></p>
+                
+                  <p> <a href="https://maps.apple.com/?address=Avenida%20C%C3%B3rdoba%205515,%20C1414%20Buenos%20Aires,%20CABA,%20Argentina&ll=-34.587780,-58.439486&q=Avenida%20C%C3%B3rdoba%205515&_ext=EiYp1okVjs9LQcAx5v/V2vM4TcA5WLTvMalKQcBB3gy3TI43TcBQBA%3D%3D" target="_blank"> <i class="fa fa-map-marker" aria-hidden="true"></i> Av. Córdoba 5515|CABA </a></p>
+                    </div>
+
+                    </div>
+                </footer>
+                
+        
+            <footer>
+                <p>&copy; 2024 Mi tienda de ropa femenina. Todos los derechos reservados.</p>
+            </footer>
+            <script>
+
+                document.getElementById('icono').addEventListener('click', function() {
+                    document.getElementById('navegador').classList.toggle('mostrarmenu');
+                });
+            </script>
+        </body>
+    </html>
