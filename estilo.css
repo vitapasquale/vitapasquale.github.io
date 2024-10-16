@@ -99,6 +99,7 @@ img{max-width: 100%;}
 .tutulo3 img {width: 18%;}
 .titulo4 {text-align: center;margin-top: 35px;margin-bottom: 5px;}
 .titulo4 img {width: 17%;}
+.titulo5 {text-align: left; font-size: 18px;}
 
 .prev {color: #ffffff !important ;position: absolute; top: 40%;font-size:30px;left:15px}
 .next {color: #ffffff !important ;position: absolute; top: 40%;font-size:30px;right: 35px}
@@ -106,9 +107,10 @@ img{max-width: 100%;}
 #icono{position: absolute;right: 10px;}
 
 .caja3columnas .boton{color: #ffffff;background-color: #000000;text-align: center;text-decoration: none;padding: 6px;border-radius: 15px;}
-.contenedor3 {max-width: 1000px;}
+
 h2 {width: 100%; text-align: center;}
 h3 {width: 100%; text-align: left;}
+h4{width:100%; text-align: center; color: #278e12;}
 .cajaanuncio {width: 728px; height: 90px; display: block; margin: auto; text-align: center;}  
 form {margin: auto; width: 30%}
 .nombre {text-align: center; color:#000000; margin-bottom: 10px}
@@ -116,6 +118,43 @@ form {margin: auto; width: 30%}
 .boton2:hover {background-color: white; color:#000000; transition: all 1s}
 .contenedor3 {max-width: 1000px}
 section {width: 100%;}
+/* Hacer los campos del formulario más grandes en dispositivos móviles */
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 12px; /* Aumentar el espacio dentro del campo */
+    font-size: 18px; /* Aumentar el tamaño del texto */
+    border-radius: 8px; /* Bordes redondeados para un aspecto moderno */
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Asegura que el padding no expanda el ancho del input */
+    margin-bottom: 15px; /* Espacio entre campos */
+}
+
+/* Ajustar el botón de envío */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #A4C8E1; /* Color pastel */
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #A8E1D3; /* Cambia el color al pasar el mouse */
+}
+
+/* Ajustar los márgenes y padding en dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor3, .contenedor4 {
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+
+
 
 @media (max-width: 480px){
 	#icono {display: block; position: absolute; right: 10px; top: 65px}
