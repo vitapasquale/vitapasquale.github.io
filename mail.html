@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Helena Dakak</title>
 </head>
+<style>
+     @media (max-width: 600px) {
+      .product {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+      }
+      .products-section {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+      
+    }
+</style>
 <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; margin: 0; padding: 0;">
   <div style="width: 100%; max-width: 600px; margin: 0 auto; background-color: #fff; border: 1px solid #e0e0e0;">
     <!-- Header -->
@@ -21,13 +34,13 @@
     </div>
 
     <!-- Products Section -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px;">
-      <div style="width: 100%; max-width: 45%; text-align: center; margin-bottom: 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px;" class="products-section">
+      <div style="width: 100%; max-width: 45%; text-align: center; margin-bottom: 20px;" class="product">
         <a href=" https://vitapasquale.github.io/#Productos" style="text-decoration: none;">
         <img src="galeria/pollera1.jpeg" alt="Clothes" style="width: 100%; height: auto;">
         <p style="font-size: 14px; color: #666; margin: 10px 0 0;">CLOTHES</p></a>
       </div>
-      <div style="width: 100%;max-width: 45%; text-align: center; margin-bottom: 20px">
+      <div style="width: 100%; max-width: 45%; text-align: center; margin-bottom: 20px" class="product">
         <a href=" https://vitapasquale.github.io/#Productos" style="text-decoration: none;">
         <img src="galeria/cartera01.jpeg" alt="Accesorios" style="width: 100%; height: auto;">
         <p style="font-size: 14px; color: #666; margin: 10px 0 0;">ACCESORIOS</p></a>
