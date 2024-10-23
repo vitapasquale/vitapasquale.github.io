@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 
 <body>
@@ -27,6 +28,7 @@
         <a href="#Contacto"> Contacto </a>
         <a href="aboutus.html">About us </a>
         <a href="formulario.html">Preguntas</a>
+        
         </nav>
         </header>
         <section>
@@ -35,6 +37,25 @@
                     <source src="DESFILE.mp4" type="video/mp4">     
                     </video>
             </div>
+            <div class="contenedor5" id="galeriafotos">
+                <h2>Nueva colección</h2>
+                <div class="caja3columnas">
+                    <a href="galeriafoto/c1.jpeg" data-lightbox="fotos" title="Vestido Juliet.">
+                        <img src="galeriafoto/c1.2.jpg">
+                    </a>
+                </div>
+                <div class="caja3columnas">
+                    <a href="galeriafoto/c2.jpeg" data-lightbox="fotos" title="Conjunto Susan.">
+                        <img src="galeriafoto/c2.2.jpg">
+                    </a>
+                </div>
+                <div class="caja3columnas">
+                    <a href="galeriafoto/c3.jpeg" data-lightbox="fotos" title="Conjunto Toledo">
+                        <img src="galeriafoto/c3.2.jpg">
+                    </a>
+            </div> 
+            </div>
+
         </section> 
         <footer>
             <div class="contenedor2">
@@ -62,5 +83,6 @@
                 document.getElementById('navegador').classList.toggle('mostrarmenu');
             });
         </script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>

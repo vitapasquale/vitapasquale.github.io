@@ -117,6 +117,7 @@ form {margin: auto; width: 30%}
 .boton2 {background-color:#000000; color: white; margin: 10px; margin-left: 150px; text-decoration: none; padding: 6px; border-radius: 15px}
 .boton2:hover {background-color: white; color:#000000; transition: all 1s}
 .contenedor3 {max-width: 1000px}
+.contenedor5 {max-width: 1000px; text-align: center;display: flex; flex-flow: wrap; justify-content: center;margin:auto}
 section {width: 100%;}
 /* Hacer los campos del formulario más grandes en dispositivos móviles */
 input[type="text"],
@@ -148,7 +149,7 @@ input[type="submit"]:hover {
 
 /* Ajustar los márgenes y padding en dispositivos móviles */
 @media (max-width: 768px) {
-    .contenedor3, .contenedor4 {
+    .contenedor3, .contenedor4 , .contenedor5 {
         padding: 20px;
         margin: 0 auto;
     }
