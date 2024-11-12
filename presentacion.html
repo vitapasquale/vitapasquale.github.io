@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Presentación de la Página Web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #ffffff, #9c9c9c);
+            color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px;
+        }
+        .navbar a {
+            color:#000000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #c1c1c1;
+        }
+        .slide {
+            display: none;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p, ul li {
+            font-size: 18px;
+            color: #555;
+        }
+        ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+        .navigation {
+            margin-top: 30px;
+        }
+        .navigation button {
+            padding: 12px 25px;
+            margin: 5px;
+            border: none;
+            background-color: #454348;
+            color: white;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .ropa{max-height: 50vh;}
+        .mapa {max-height:60VH;}
+        .wireframes{max-height:20vh;}
+        .navigation button:hover {
+            background-color: #7c7c7c;
+        }
+        .navigation button:disabled {
+            background-color: #d3d3d3;
+            cursor: not-allowed;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Barra de Navegación Superior -->
+    <div class="navbar">
+        <a href="#" onclick="goToSlide(0)">Inicio</a>
+        <a href="#" onclick="goToSlide(1)">Proposito</a>
+        <a href="#" onclick="goToSlide(2)">Estructura</a>
+        <a href="#" onclick="goToSlide(3)">Wireframes</a>
+        <a href="#" onclick="goToSlide(4)">Diseño Visual</a>
+        <a href="#" onclick="goToSlide(5)">Footer</a>
+        
+    </div>
+
+    <!-- Diapositivas -->
+    <div class="slide active">
+        <h1>Helena Dakak</h1>
+        <img class="fotito" src="galeria/prinicpal.jpeg">
+<p>Alumna: Vita Pasquale</p>
+<p>Profesor: Wenceslao Zavala</p>
+<p>Materiales y Procesos I</p>
+    </div>
+    <div class="slide">
+        <h2>Propósito de la página</h2>
+        <P>Sitio de moda.</P>
+        <p>Comunicar información importante sobre la marca, vender sus productos y poder interactuar con el cliente de una manera mas facil.</p>
+        <img class="ropa" src="galeria/modelos.jpeg"> 
+    </div>
+    <div class="slide">
+        <h2>Estructura General</h2>
+        <p>La página incluye las siguientes secciones clave:</p>
+        <img class="mapa" src="galeria/mapadesitio.jpg">
+    </div>
+    
+    <div class="slide">
+        <h2>Wireframes</h2>
+        <p>Planifique el diseño y la funcionalidad sin entrar en detalles visuales como colores, fuentes o imágenes, "boceto" o "esqueleto" del sitio.</p>
+        <p>Wireframe movil.</p>
+        <img class="wireframes" src="galeria/wireframecelu.jpg">
+        <p>Wireframe web.</p>
+        <img class="wireframes" src="galeria/wireframeweb_Mesa de trabajo 1.jpg">
+    </div>
+
+    <div class="slide">
+        <h2>Diseño Visual</h2>
+        <p>El diseño utiliza una paleta de colores suaves y tipografía moderna para reflejar la identidad de la marca y proporcionar una experiencia agradable a los visitantes.</p>
+        <img class="diseño" src="galeria/diseno.jpg">
+    </div>
+
+    <div class="slide">
+        <h2>Footer</h2>
+        <p>Concentra información de contacto y es interactivo para el usuario debido a los hipervínculos hacia las redes sociales, todo esta con links que te dirigen directamente a donde queres dirgirte. </p>
+
+        <footer>
+            <div class="contenedor2">
+                <h2> CONTACTÁNOS </h2>
+            <div id="Contacto">
+             <p> <a href= "https://www.instagram.com/candelaria.portfolio?igsh=MW03OGZiMTZmZThvZA%3D%3D&utm_source=qr" target="_blank"> <i class="fa fa-instagram" aria-hidden="true">  </i> @helenadakak </a></p>
+                
+              <p> <a href="mailto:crodri@palermo.com?Subject=Consulta%20Saudade%20BA" target="_blank"> <i class="fa fa-envelope-o" aria-hidden="true"> </i> helenadakak@gmail.com </a></p>
+                
+              <p> <a href="https://wa.me/541162962331" target="_blank"> <i class="fa fa-whatsapp" aria-hidden="true"> </i> +5491154000092 </a></p>
+            
+              <p> <a href="https://www.google.com/maps/place/La+Rabida+2400,+B1643AXT+B%C3%A9ccar,+Provincia+de+Buenos+Aires/@-34.4703562,-58.5593036,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcbaaaf9a618d5:0xd15c9dd66a39557d!8m2!3d-34.4703606!4d-58.5567287!16s%2Fg%2F11j8pzry5c?hl=es&entry=ttu" target="_blank"> <i class="fa fa-map-marker" aria-hidden="true"></i> Av. Córdoba 5515|CABA </a></p>
+                </div>
+
+                </div>
+            </footer>
+    </div>
+
+   
+    <!-- Navegación entre Diapositivas -->
+    <div class="navigation">
+        <button id="prev" onclick="changeSlide(-1)" disabled>Anterior</button>
+        <button id="next" onclick="changeSlide(1)">Siguiente</button>
+    </div>
+
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    function showSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        slides[index].classList.add('active');
+        currentSlide = index;
+        
+        prevButton.disabled = currentSlide === 0;
+        nextButton.disabled = currentSlide === slides.length - 1;
+    }
+
+    function changeSlide(direction) {
+        let newSlide = currentSlide + direction;
+        if (newSlide >= 0 && newSlide < slides.length) {
+            showSlide(newSlide);
+        }
+    }
+
+    function goToSlide(index) {
+        showSlide(index);
+    }
+</script>
+
+</body>
+</html>
+
